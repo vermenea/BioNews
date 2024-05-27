@@ -1,22 +1,23 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import './globals.css';
+import MainHeader from '@/components/main-header';
 
 export const metadata: Metadata = {
-  title: "BioNews",
-  description: "Enhance your knowledge by visiting our BioNews website",
+	title: 'BioNews',
+	description: 'Enhance your knowledge by visiting our BioNews website',
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+	return (
+		<html lang='en'>
+			<body>
+				<MainHeader />
+				{children}
+			</body>
+		</html>
+	);
 }
