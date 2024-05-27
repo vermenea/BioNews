@@ -1,5 +1,12 @@
-
-export const NEWS = [
+export interface NewsItemProps {
+	id: string;
+	slug: string;
+	title: string;
+	image: string;
+	date: string;
+	content: string;
+}
+export const NEWS: NewsItemProps[] = [
 	{
 		id: 'n1',
 		slug: 'sequencing-of-developing-human-brain',
@@ -25,7 +32,7 @@ export const NEWS = [
 		title:
 			'Scientists map networks regulating gene function in the human brain',
 		image: 'brain.jpg',
-		date: '2024-02-01',
+		date: '2021-02-01',
 		content:
 			'A consortium of researchers has produced the largest and most advanced multidimensional maps of gene regulation networks in the brains of people with and without mental disorders. These maps detail the many regulatory elements that coordinate the brains biological pathways and cellular functions. The research used postmortem brain tissue from over 2,500 donors to map gene regulation networks across different stages of brain development and multiple brain-related disorders.',
 	},
