@@ -13,6 +13,6 @@ BioNews is your go-to medical hub website, It's aim was to enhance my knowledge 
 - Typescript
 - CSS
 - ...?
-- 
+  
 **❗ DISCLAIMER:❗ **
 This app is currently under development. Stay patient and watch this space for updates! 
