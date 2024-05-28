@@ -9,9 +9,9 @@ export interface NewsItemProps {
 export const NEWS: NewsItemProps[] = [
 	{
 		id: 'n1',
-		slug: 'sequencing-of-developing-human-brain',
+		slug: 'sequencing-of-human-brain-uncovers-new-gene-transcripts',
 		title:
-			'Sequencing of the developing human brain uncovers hundreds of thousands of new gene transcripts',
+			'Sequencing of the human brain uncovers new gene transcripts',
 		image: 'sequencing.jpg',
 		date: '2024-03-01',
 		content:
