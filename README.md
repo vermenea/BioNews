@@ -13,6 +13,7 @@ frontend:
 - Next.js
 - Typescript
 - CSS
+- Material UI
 
 backend:
 - Python
