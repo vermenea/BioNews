@@ -18,6 +18,7 @@ frontend:
 backend:
 - Python
 - Flask
+- SQLite
 
 ❗ DISCLAIMER:❗ 
 This app is currently under development. Stay patient and watch this space for updates! 
