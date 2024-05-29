@@ -1,9 +1,10 @@
-import { NEWS } from '@/news';
+import { getNewsItem } from '@/backend/news-util';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-export default function NewsDetailPage({ params }: any) {
+export default async function NewsDetailPage({ params }: any) {
 	const newsSlug = params.slug;
-	const newsItem = NEWS.find((newsItem) => newsItem.slug === newsSlug);
+	const newsItem = await getNewsItem(newsSlug);
 
 	if (!newsItem) {
 		notFound();
@@ -17,6 +18,7 @@ export default function NewsDetailPage({ params }: any) {
 				<time dateTime={newsItem.date}>{newsItem.date}</time>
 			</header>
 			<p>{newsItem.content}</p>
+		
 		</article>
 	);
 }
