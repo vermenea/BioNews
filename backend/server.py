@@ -45,6 +45,31 @@ NEWS = [
         'image': 'cancer.jpg',
         'date': '2022-07-01',
         'content': 'Scientists are predicting individual risks for 20 different types of cancer with a high degree of accuracy. The prediction model could help to identify people with a high risk of cancer, for whom individualized early detection programs could be tested in studies.',
+        'text1': 'If cancers are detected early, the chances of cure are generally higher and patients require less intensive treatment. However, screening programs for the early detection of cancer only exist for a few tumor diseases -- and not all people take advantage of these offers. If there were a simple way to filter out people with a very high risk of developing cancer, screening programs could be developed specifically for those at risk. Researchers led by Moritz Gerstung from the DKFZ and the European Bioinformatics Institute EMBL-EBI, Hinxton, UK, have now published a feasibility study on this topic. The data scientists used the comprehensive data from the Danish health register, in which all clinical diagnoses of the population are stored, to quantify the individual disease risks for 20 different types of cancer.',
+    },
+     {
+        'id': 'n6',
+        'slug': 'genetic-mosaicism',
+        'title': 'Genetic mosaicism more common than thought',
+        'image': 'mosaicism.jpg',
+        'date': '2024-05-28',
+        'content': 'Researchers found that approximately one in 40 human bone marrow cells carry massive chromosomal alterations without causing any apparent disease or abnormality. Even so-called normal cells carry all sorts of genetic mutations, meaning there are more genetic differences between individual cells in our bodies than between different human beings. The discovery was enabled by a single-cell sequencing technology called Strand-seq, a unique DNA sequencing technique that can reveal subtle details of genomes in single cells that are too difficult to detect with other methods.',
+    },
+     {
+        'id': 'n7',
+        'slug': 'CRISPR-trial',
+        'title': 'Participants of pioneering CRISPR gene editing trial see vision improve',
+        'image': 'crispr.jpg',
+        'date': '2024-05-06',
+        'content': 'About 79% of clinical trial participants experienced measurable improvement after receiving experimental, CRISPR-based gene editing that is designed to fix a rare form of blindness, according to a new article.',
+    },
+     {
+        'id': 'n8',
+        'slug': 'birth-control-for-men',
+        'title': 'A promising approach to develop a birth control pill for men',
+        'image': 'men.jpg',
+        'date': '2022-12-18',
+        'content': 'Researchers show in animal models that a novel, non-hormonal sperm-specific approach offers a promising option for reversible human male contraception.',
     },
 ]
 
