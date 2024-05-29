@@ -37,3 +37,9 @@ next-env.d.ts
 
 #backend
 data.db
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore virtual environment directory
+/backend/.venv/
