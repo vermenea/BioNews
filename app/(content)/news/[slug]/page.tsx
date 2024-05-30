@@ -14,11 +14,15 @@ export default async function NewsDetailPage({ params }: any) {
 	return (
 		<article className='news-article'>
 			<header>
-				<Image src={`/images/news/${newsItem.image}`} alt={newsItem.title} width={100} height={50}/>
+				<img src={`/images/news/${newsItem.image}`} alt={newsItem.title}/>
 				<h1>{newsItem.title}</h1>
 				<time dateTime={newsItem.date}>{newsItem.date}</time>
 			</header>
-			<p>{newsItem.url}</p>
+			<p>{newsItem.content}</p>
+			<div className='container'>
+			<Link href={newsItem.url} className='article-link'>Read more</Link>
+			</div>
+			
 		
 		</article>
 	);

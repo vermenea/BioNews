@@ -10,7 +10,7 @@ export default async function NewsPage() {
 	const news = await response.json();
 	return (
 		<>
-			<h1>News Page</h1>
+			<h1 className='news-header'>Top Science News</h1>
 			<NewsList news={news} />
 		</>
 	);

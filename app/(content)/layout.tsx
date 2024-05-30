@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import '../globals.css';
 import MainHeader from '@/components/main-header';
+import Footer from '@/components/layout/Footer/Footer';
+import Layout from '@/components/layout/layout';
 
 export const metadata: Metadata = {
 	title: 'BioNews',
@@ -17,6 +19,7 @@ export default function RootLayout({
 			<body>
 				<MainHeader />
 				{children}
+				<Layout/>
 			</body>
 		</html>
 	);
