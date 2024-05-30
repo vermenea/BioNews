@@ -91,7 +91,8 @@ def init_db():
             title TEXT,
             content TEXT,
             date TEXT,
-            image TEXT
+            image TEXT,
+            url TEXT
         )
         '''
     )
@@ -100,10 +101,10 @@ def init_db():
     if count == 0:
         cursor.executemany(
             '''
-            INSERT INTO news (id, slug, title, content, date, image) 
-            VALUES (?, ?, ?, ?, ?, ?)
+            INSERT INTO news (id, slug, title, content, date, image, url) 
+            VALUES (?, ?, ?, ?, ?, ?, ?)
             ''',
-            [(news['id'], news['slug'], news['title'], news['content'], news['date'], news['image']) for news in NEWS]
+            [(news['id'], news['slug'], news['title'], news['content'], news['date'], news['image'], news['url']) for news in NEWS]
         )
     conn.commit()
     conn.close()
@@ -123,6 +124,7 @@ def get_news():
             'content': row[3],
             'date': row[4],
             'image': row[5],
+            'url': row[6]
         } for row in news
     ]
     return jsonify(news_list)

@@ -14,7 +14,7 @@ export default async function NewsDetailPage({ params }: any) {
 	return (
 		<article className='news-article'>
 			<header>
-				<Image src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+				<Image src={`/images/news/${newsItem.image}`} alt={newsItem.title} width={100} height={50}/>
 				<h1>{newsItem.title}</h1>
 				<time dateTime={newsItem.date}>{newsItem.date}</time>
 			</header>
