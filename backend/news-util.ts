@@ -9,6 +9,7 @@ interface NewsItem {
 	content: string;
 	date: string;
 	slug: string;
+	url: string;
 }
 
 export async function getAllNews(): Promise<NewsItem[]> {

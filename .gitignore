@@ -43,3 +43,6 @@ __pycache__/
 
 # Ignore virtual environment directory
 /backend/.venv/
+.venv/
+.venv
+/.venv
