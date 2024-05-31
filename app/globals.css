@@ -12,7 +12,7 @@ body {
 	margin: 0;
 	background: radial-gradient(circle, #0c0c16, #161616);
 	color: #e5e5e1;
-	padding: 2rem;
+	padding: 0.5em;
 }
 
 ul {
@@ -134,6 +134,7 @@ ul {
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	margin: 2em 0em;
 }
 
 .news-list a {
@@ -233,9 +234,6 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 }
 .footer a {
@@ -249,4 +247,17 @@ ul {
 }
 .icon {
 	margin: 1em;
+	transition: transform 0.4s ease-in-out;
 }
+.icon:hover {
+	transform: rotate(30deg);
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100vh;
+	padding: 1em;
+	background: radial-gradient(circle, #0c0c16, #161616);
+	box-sizing: border-box;
+  }
