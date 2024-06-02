@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import github from '@/public/github.png';
-import linkedin from '@/public/linkedin.png';
-import email from '@/public/email.png';
+import github from '@/public/icons/github.png';
+import linkedin from '@/public/icons/linkedin.png';
+import email from '@/public/icons/email.png';
 import Link from 'next/link';
 
 const icons = [
