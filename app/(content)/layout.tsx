@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import '../globals.css';
+import '@/style/globals.css';
 import Layout from '@/components/layout/layout';
-import MainHeader from '@/components/main-header';
+import MainHeader from '@/components/layout/main-header';
 
 export const metadata: Metadata = {
 	title: 'BioNews',
